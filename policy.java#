@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class policy{
+
+public static void main (String[] args){
+
+Scanner scanner = new Scanner (System.in);
+
+int policyNumber=0;
+String insuranceCompany;
+String clientFirst;
+String clientLast;
+int clientAge;
+String smokingStatus;
+
+System.out.print("Please enter the policy number:");
+policyNumber= scanner.nextInt();
+
+System.out.println("Please enter the provider name:");
+insuranceCompany= scanner.nextLine();
+
+System.out.print("Please enter the Policyholder's first name:");
+clientFirst = scanner.nextLine();
+
+System.out.print("Please enter the Policyholder's last name:");
+clientLast = scanner.nextLine();
+
+System.out.print("Please enter the Policyholder's age:");
+clientAge = scanner.nextInt();
+
+System.out.print("Please enter the policyholder's smoking status(smoker/non-smoker):");
+smokingStatus = scanner.nextLine();
+
+
+
+}
+public static double bmi(double height, double weight){
+double BMI;
+return BMI=(weight * 703)/(height)*(height);
+}
+}
